@@ -278,6 +278,9 @@
 					<v-container class="" >
 							<v-divider class="mt-4"></v-divider>
 							<h1 class="pt-4 display-1 font-weight-bold" align="center" justify="center">Latest Episode</h1>
+							<p class="caption" align="center" justify="center">
+									Best therapy to encourage and overcome problem
+							</p>
 							<v-divider class="pa-4"></v-divider>
 						</v-container>
 					<v-container>
@@ -337,6 +340,9 @@
 						<v-container >
 								<v-divider class="mt-1"></v-divider>
 								<h1 class="pt-4 display-1 font-weight-bold" align="center" justify="center">Message</h1>
+								<p class="caption" align="center" justify="center">
+										Best therapy to encourage and overcome problem
+								</p>
 								<v-divider class="ma-4 pa-4"></v-divider>
 								
 						</v-container>
@@ -359,7 +365,7 @@
 										<v-list-item class="grow">
 											
 											<v-list-item-content>
-												<v-list-item-title>Name here</v-list-item-title>
+												<v-list-item-title>Sanjeeb</v-list-item-title>
 											</v-list-item-content>
 							
 										</v-list-item>
@@ -384,7 +390,7 @@
 										<v-list-item class="grow">
 											
 											<v-list-item-content>
-												<v-list-item-title>Name here</v-list-item-title>
+												<v-list-item-title>Raznesh here</v-list-item-title>
 											</v-list-item-content>
 							
 										</v-list-item>
@@ -409,7 +415,7 @@
 										<v-list-item class="grow">
 											
 											<v-list-item-content>
-												<v-list-item-title>Name here</v-list-item-title>
+												<v-list-item-title>Prerana here</v-list-item-title>
 											</v-list-item-content>
 							
 										</v-list-item>
@@ -434,7 +440,7 @@
 										<v-list-item class="grow">
 											
 											<v-list-item-content>
-												<v-list-item-title>Name here</v-list-item-title>
+												<v-list-item-title>Aashish here</v-list-item-title>
 											</v-list-item-content>
 							
 										</v-list-item>
