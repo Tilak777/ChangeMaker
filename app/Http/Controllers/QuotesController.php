@@ -14,7 +14,7 @@ class QuotesController extends Controller
      */
     public function index()
     {
-        //
+        return view('changemaker.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class QuotesController extends Controller
      */
     public function create()
     {
-        //
+        return view('changemaker.quoteform');
     }
 
     /**
@@ -35,7 +35,13 @@ class QuotesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $obj = new Quote;
+        $obj->name = $request->input('fullname');
+        $obj->message = $request->input('quote');
+
+        $obj->save();
+
+        return view('changemaker.index');
     }
 
     /**

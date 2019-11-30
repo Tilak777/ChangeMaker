@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('quote', 'QuotesController@create');
+Route::post('post_quote', 'QuotesController@store');
+Route::get('/', 'QuotesController@index');
+
+
+Route::get('admin', 'AdminController@index');
+Route::get('confirmquote/{id}', 'AdminController@confirmQuote');
+Route::get('viewmessage/{id}', 'AdminController@viewmessage');
