@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +6,7 @@
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 
-
-  <style>
+	<style>
       * {
 	 padding: 0;
 	 margin: 0;
@@ -28,9 +26,7 @@
 	 display: none;
 }
  .header {
-	 width: 100%;
-	 height: 100vh;
-	 background: url(https://bit.ly/2QNWUBq);
+
 	 background-size: cover;
 	 background-position: center center;
 	 background-repeat: no-repeat;
@@ -177,91 +173,310 @@
 	}
 }
  
-
     </style>
-</head>
-<body>
-    <header class="header">
-        <nav class="navbar">
-          <a class="logo" href="#">Brand</a>
-          <input type="checkbox" id="nav" class="hidden">
-          <label for="nav" class="nav-toggle">
-              <span></span>
-              <span></span>
-              <span></span>
-           </label>
-          <div class="wrapper">
-            <ul class="menu">
-              <li class="menu-item"><a href="#">Home</a></li>
-              <li class="menu-item"><a href="#">About</a></li>
-              <li class="menu-item"><a href="#">Prices</a></li>
-              <li class="menu-item"><a href="#">Service</a></li>
-              <li class="menu-item"><a href="#">Works</a></li>
-              <li class="menu-item"><a href="#">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+	
 
+
+</head>
+
+
+<body>
+		
   <div id="app">
     <v-app>
       <v-content>
-        <v-container>Hello world
 
-            <template>
-                <v-card
-                  class="mx-auto"
-                  color="#26c6da"
-                  dark
-                  max-width="400"
-                >
-                  <v-card-title>
-                    <v-icon
-                      large
-                      left
-                    >
-                      mdi-twitter
-                    </v-icon>
-                    <span class="title font-weight-light">Twitter</span>
-                  </v-card-title>
-              
-                  <v-card-text class="headline font-weight-bold">
-                    "Turns out semicolon-less style is easier and safer in TS because most gotcha edge cases are type invalid as well."
-                  </v-card-text>
-              
-                  <v-card-actions>
-                    <v-list-item class="grow">
-                      <v-list-item-avatar color="grey darken-3">
-                        <v-img
-                          class="elevation-6"
-                          src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light"
-                        ></v-img>
-                      </v-list-item-avatar>
-              
-                      <v-list-item-content>
-                        <v-list-item-title>Evan You</v-list-item-title>
-                      </v-list-item-content>
-              
-                      <v-row
-                        align="center"
-                        justify="end"
-                      >
-                        <v-icon class="mr-1">mdi-heart</v-icon>
-                        <span class="subheading mr-2">256</span>
-                        <span class="mr-1">·</span>
-                        <v-icon class="mr-1">mdi-share-variant</v-icon>
-                        <span class="subheading">45</span>
-                      </v-row>
-                    </v-list-item>
-                  </v-card-actions>
-                </v-card>
-              </template>
+        <v-container>
+
+						<header class="header">
+								<nav class="navbar">
+									<a class="logo" href="#">ChangeMaker</a>
+									<input type="checkbox" id="nav" class="hidden">
+									<label for="nav" class="nav-toggle">
+											<span></span>
+											<span></span>
+											<span></span>
+									 </label>
+									<div class="wrapper">
+										<ul class="menu">
+											<li class="menu-item"><a href="{{url('/')}}">Home</a></li>
+											<li class="menu-item"><a href="{{url('podcast')}}">Podcast</a></li>
+											<li class="menu-item"><a href="{{url('message')}}">Message</a></li>
+											<li class="menu-item"><a href="{{url('posts')}}">Confession</a></li>
+											
+										</ul>
+									</div>
+								</nav>
+							</header>
+							<br/>
+							<br/>
+							<br/>
+				
+					
+						<v-layout row wrap justify-space-between>
+								<v-flex class="pa-5" xs12 md6>
+									
+									<h1
+										align="center"
+										justify="center"
+										class="display-2 font-weight-medium pa-4"
+										
+									>
+										ChangeMaker
+									</h1>
+									<p
+										class="title font-weight-light pa-4"
+										align="center"
+										justify="center"
+										
+									>
+										A Web application project to
+										<b>
+											raise awarness
+											about mental health and to remind people to be kind to one another.
+										</b>
+										<br />
+									</p>
+								</v-flex>
+				
+								<v-flex xs12 md6>
+									<v-row align="center" justify="center">
+										<v-img
+											src="index.svg"
+											max-width="450px"
+										
+										></v-img>
+									</v-row>
+								</v-flex>
+							</v-layout>
+
+				</v-container>
+
+				<v-container >
+						<v-card
+							dark
+							raised
+							class="blue-grey darken-1"
+							align="center"
+							justify="center"
+						>
+							<h1 class="pt-4 display-1 font-weight-regular">Who are we?</h1>
+							<v-row align="center" justify="center" class="pa-4">
+									<p class="title font-weight-light pa-4">
+										The one who never gives up,
+										gather knowledge, 
+										resources and makes that change happen.
+										<br/>
+											As a leading voice on workplace mental health, the ChangeMaker supports in promoting the mental health of people.
+											The series are designed to inspire at all levels to create a culture of mental health and well-being.
+											By providing practical guidance and strategies, professionals will be prepared to make positive difference in people's mind set.
+											
+										</p>
+							</v-row>
+						</v-card>
+					</v-container>
+					<v-container class="" >
+							<v-divider class="mt-4"></v-divider>
+							<h1 class="pt-4 display-1 font-weight-bold" align="center" justify="center">Latest Episode</h1>
+							<v-divider class="pa-4"></v-divider>
+						</v-container>
+					<v-container>
+						<v-card class=" pa-4 ">
+								<script src="https://www.buzzsprout.com/737135/2180384-first.js?player=small" type="text/javascript" charset="utf-8"></script>
+								<script src="https://www.buzzsprout.com/737135/2171330-the-struggle-boss.js?player=small" type="text/javascript" charset="utf-8"></script>
+								<script src="https://www.buzzsprout.com/737135/2180384-the-hilarious-world-of-depression.js?player=small" type="text/javascript" charset="utf-8"></script>
+								<script src="https://www.buzzsprout.com/737135/2171330-the-mental-illness-happy-hour.js?player=small" type="text/javascript" charset="utf-8"></script>
+								<div class="my-2" align="center" justify="center">
+										<v-btn color="primary">More</v-btn>
+									</div>
+							</v-card>	
+					</v-container>
+
+					<v-container >
+							<v-divider class="mt-4"></v-divider>
+							<h1 class="pt-4 display-1 font-weight-bold" align="center" justify="center">Recommendation</h1>
+							<v-divider class="ma-4 pa-4"></v-divider>
+							<v-row class="text-center ma-4 pa-4" justify="center" align="center">
+								
+									<div class="ma-2">
+										<v-btn large>Music</v-btn>
+									</div>
+									<div class="ma-2">
+											<v-btn large>Fashion</v-btn>
+										</div>
+										<div class="ma-2">
+												<v-btn large>Entertainment</v-btn>
+											</div>
+											<div class="ma-2">
+													<v-btn large>Teacher</v-btn>
+												</div>
+												<div class="ma-2">
+														<v-btn large>Artist</v-btn>
+													</div>
+								</v-row>
+
+								<v-row class="text-center ma-2 pa-2" justify="center" align="center">
+								
+										<div class="ma-2">
+											<v-btn large>Banker</v-btn>
+										</div>
+										<div class="ma-2">
+												<v-btn large>Technology</v-btn>
+											</div>
+											<div class="ma-2">
+													<v-btn large>Entertainment</v-btn>
+												</div>
+												<div class="ma-2">
+														<v-btn large>Teacher</v-btn>
+													</div>
+													<div class="ma-2">
+															<v-btn large>Artist</v-btn>
+														</div>
+													</v-row>
+						</v-container>
+						<v-container >
+								<v-divider class="mt-1"></v-divider>
+								<h1 class="pt-4 display-1 font-weight-bold" align="center" justify="center">Message</h1>
+								<v-divider class="ma-4 pa-4"></v-divider>
+								
+						</v-container>
+						<template>
+							<v-container>
+									<v-layout row wrap justify-space-between>
+								<v-flex class="pt-4">
+													<v-card
+									class="mx-auto"
+									color="#26c6da"
+									dark
+									max-width="400"
+								>
+									
+									<v-card-text class="headline font-weight-bold">
+										"Turns out semicolon-less style is easier and safer in TS because most gotcha edge cases are type invalid as well."
+									</v-card-text>
+							
+									<v-card-actions>
+										<v-list-item class="grow">
+											
+											<v-list-item-content>
+												<v-list-item-title>Name here</v-list-item-title>
+											</v-list-item-content>
+							
+										</v-list-item>
+									</v-card-actions>
+								</v-card>
+												
+								</v-flex>
+							
+								<v-flex class="pt-4" xs12 md6>
+								<v-card
+									class="mx-auto"
+									color="#26c6da"
+									dark
+									max-width="400"
+								>
+									
+									<v-card-text class="headline font-weight-bold">
+										"Turns out semicolon-less style is easier and safer in TS because most gotcha edge cases are type invalid as well."
+									</v-card-text>
+							
+									<v-card-actions>
+										<v-list-item class="grow">
+											
+											<v-list-item-content>
+												<v-list-item-title>Name here</v-list-item-title>
+											</v-list-item-content>
+							
+										</v-list-item>
+									</v-card-actions>
+								</v-card>
+												
+											</v-flex>
+
+											<v-flex class="pt-4">
+													<v-card
+									class="mx-auto"
+									color="#26c6da"
+									dark
+									max-width="400"
+								>
+									
+									<v-card-text class="headline font-weight-bold">
+										"Turns out semicolon-less style is easier and safer in TS because most gotcha edge cases are type invalid as well."
+									</v-card-text>
+							
+									<v-card-actions>
+										<v-list-item class="grow">
+											
+											<v-list-item-content>
+												<v-list-item-title>Name here</v-list-item-title>
+											</v-list-item-content>
+							
+										</v-list-item>
+									</v-card-actions>
+								</v-card>
+												
+								</v-flex>
+							
+								<v-flex class="pt-4" xs12 md6>
+								<v-card
+									class="mx-auto"
+									color="#26c6da"
+									dark
+									max-width="400"
+								>
+									
+									<v-card-text class="headline font-weight-bold">
+										"Turns out semicolon-less style is easier and safer in TS because most gotcha edge cases are type invalid as well."
+									</v-card-text>
+							
+									<v-card-actions>
+										<v-list-item class="grow">
+											
+											<v-list-item-content>
+												<v-list-item-title>Name here</v-list-item-title>
+											</v-list-item-content>
+							
+										</v-list-item>
+									</v-card-actions>
+								</v-card>
+												
+											</v-flex>
+											
+								</v-layout>
+
+								<div class="mt-4" align="center" justify="center">
+										<v-btn color="primary">More</v-btn>
+									</div>
 
 
-        </v-container>
-      </v-content>
+							
+							</v-container>
+							<template>
+									<v-card >
+										<v-footer
+											absolute
+											class="font-weight-medium"
+										>
+											<v-col
+												class="text-center"
+												cols="12"
+											>
+											 <strong>
+													© Copyright
+											 </strong>
+											</v-col>
+										</v-footer>
+									</v-card>
+								</template>
+							</template>
+
+					<v-container>
+			 
+			</v-content>
+			
     </v-app>
-  </div>
+	</div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
@@ -269,7 +484,9 @@
     new Vue({
       el: '#app',
       vuetify: new Vuetify(),
+			
     })
-  </script>
+	</script>
+	
 </body>
 </html>
